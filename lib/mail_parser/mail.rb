@@ -14,10 +14,7 @@ module MailParser
       parsed_metadata = parsed_email[1]
       @body = parsed_email[2]
       @raw = parsed_email[3]
-      
-      
-      p parsed_email[0]
-      
+          
       @from = parsed_metadata[:from]
       @to = parsed_metadata[:to]
       @subject = parsed_metadata[:subject]
